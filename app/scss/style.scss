@@ -3,6 +3,99 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %rubik-500;
+  }
+}
+
+.logo{
+  display: flex;
+  font-size: 36px;
+  line-height: 58px;
+  color: $accent;
+  &__img{
+    margin-right: 10px;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    margin-left: 30px;
+  }
+  &__list-link{
+    font-size: 15px;
+    line-height: 12px;
+    color: $accent;
+  }
+}
+
+.user-nav{
+  display: flex;
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &__link--search{
+    background-color: $back1;
+  }
+  &__link--menu-btn{
+    background-color: $back3;
+  }
+
+  &__inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 180px;
+    height: 50px;
+    margin: 0 18px;
+    
+    background-color: $back2;
+    border-radius: 50px;
+  }
+  &__inner:after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 32px;
+    background-color: #fde7d3;
+  }
+  &__link-inner{
+    position: relative;
+  }
+  &__num{
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    background-color: $back4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+  }
+}
+
+
+
+
+
+
 
 
 @import 'media';
