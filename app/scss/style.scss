@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1770px;
+    margin: 0 auto;
+    line-height: 22px;
     @extend %rubik-500;
   }
 }
@@ -90,6 +93,98 @@
     line-height: 15px;
   }
 }
+
+// .footer
+.footer-top {
+  display: flex;
+  padding: 75px 0;
+  border-bottom: 1px solid #dae4e9;
+  line-height: 22px;
+  &__contact {
+    width: 200px;
+    margin-right: 100px;
+	}
+  &__item-logo{
+    margin-bottom: 15px;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 10px;
+    color: $default;
+    transition: all .3s;
+    &:hover{
+      text-decoration: underline;
+    }
+	}
+  &__nav {
+    width: 170px;
+    margin-right: 130px;
+	}
+  &__title {
+    margin: 22px 0;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $ft;
+    @extend %dm-700;
+  	}
+  &__item-form {
+    max-width: 269px;
+	}
+  &__text {
+    margin-bottom: 32px;
+	}
+  &__form {
+    display: flex;
+    @extend %dm-400;
+	}
+  &__form-input {
+    width: 100%;
+    max-width: 170px;
+    padding: 14px 10px 14px 15px;
+    margin: 0;
+    line-height: 0;
+    background-color: $back5;
+    border: none;
+    &::placeholder{
+      font-size: 12px;
+      color: #234969;
+    }
+	}
+  &__form-btn {
+    padding: 0 25px 0 10px;
+    line-height: 0;
+    border: none;
+    background-color: $back3;
+    font-size: 14px;
+    color: $back4;
+    cursor: pointer;
+	}
+}
+
+.footer-bottom {
+  height: 90px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  color: $default;
+	&__nav-list {
+    display: flex;
+	}
+	&__nav-item {
+    padding: 0 15px;
+    border-right: 1px solid $default;
+    &:last-child{
+      padding-right: 0;
+      border: none;
+    }
+	}
+	&__nav-link {
+    color: $default;
+    line-height: 0;
+	}
+}
+
 
 
 
