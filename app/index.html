@@ -11,54 +11,141 @@
 
 <body>
   <header class="header">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-          Glee.
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="logo">
+        Glee.
+      </a>
+      <nav class="nav">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Home +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Pages +</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__link user-nav__link--search " href="#">
+          <img class="user-nav__img" src="images/icon/search.svg" alt="search button">
         </a>
-        <nav class="nav">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Home +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Pages +</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <a class="user-nav__link user-nav__link--search " href="#">
-            <img class="user-nav__img" src="images/icon/search.svg" alt="search button">
+        <div class="user-nav__inner">
+          <a class="user-nav__link-inner" href="#">
+            <img class="user-nav__img" src="images/icon/heart.svg" alt="like button">
+            <span class="user-nav__num">0</span>
           </a>
-          <div class="user-nav__inner">
-            <a class="user-nav__link-inner" href="#">
-              <img class="user-nav__img" src="images/icon/heart.svg" alt="like button">
-              <span class="user-nav__num">0</span>
-            </a>
-            <a class="user-nav__link-inner" href="#">
-              <img class="user-nav__img" src="images/icon/cart.svg" alt="cart button">
-              <span class="user-nav__num">0</span>
-            </a>
-          </div>
-          <a class="user-nav__link user-nav__link--menu-btn" href="#">
-            <img class="user-nav__img" src="images/icon/menu_btn.svg" alt="menu button">
+          <a class="user-nav__link-inner" href="#">
+            <img class="user-nav__img" src="images/icon/cart.svg" alt="cart button">
+            <span class="user-nav__num">0</span>
           </a>
         </div>
+        <a class="user-nav__link user-nav__link--menu-btn" href="#">
+          <img class="user-nav__img" src="images/icon/menu_btn.svg" alt="menu button">
+        </a>
       </div>
+    </div>
   </header>
-  <div class="main"></div>
+
+  <div class="main">
+    <section class="top-slider">
+      <div class="top-slider__wrapper">
+        <div class="container">
+          <div class="top-slider__inner">
+            <div class="top-slider__item">
+              <div class="top-slider__content">
+                <h3 class="top-slider__title">SMART AND
+                  TRENDY
+                </h3>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#">
+                  Shop Now
+                </a>
+              </div>
+              <img class="top-slider__img" src="images/slider/1.png" alt="product">
+            </div>
+            <div class="top-slider__item">
+              <div class="top-slider__content">
+                <h3 class="top-slider__title">SMART AND
+                  TRENDY
+                </h3>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#">
+                  Shop Now
+                </a>
+              </div>
+              <img class="top-slider__img" src="images/slider/1.png" alt="product">
+            </div>
+
+            <div class="top-slider__item">
+              <div class="top-slider__content">
+                <h3 class="top-slider__title">SMART AND
+                  TRENDY
+                </h3>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#">
+                  Shop Now
+                </a>
+              </div>
+              <img class="top-slider__img" src="images/slider/1.png" alt="product">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="top-slider__features">
+        <div class="top-slider__inner"></div>
+        <div class="top-slider__features-items">
+          <div class="top-slider__features-item top-slider__features-item--support">
+            <h5 class="top-slider__features-title">Support 24/7.</h5>
+            <p class="top-slider__features-text">
+              Contact us 24 hours a day,
+              7 days a week.
+            </p>
+          </div>
+
+          <div class="top-slider__features-item top-slider__features-item--delivery">
+            <h5 class="top-slider__features-title">Delivery.</h5>
+            <p class="top-slider__features-text">
+              Free shipping on all US order.
+            </p>
+          </div>
+
+          <div class="top-slider__features-item top-slider__features-item--payment">
+            <h5 class="top-slider__features-title">100% Payment secure.</h5>
+            <p class="top-slider__features-text">
+              We ensure secure payment
+              with PEV.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+  </section>
+
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
@@ -70,8 +157,8 @@
           <a class="footer-top__link" href="#">ADDRESS: 4772 Wines Lane
             Houston, TX 77032
           </a>
-          <a class="footer-top__link" href="tel:+8323475843">Telephone: +832-347-5843</a>
-          <a class="footer-top__link" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+          <a class="footer-top__link" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+          <a class="footer-top__link" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
         </div>
         <div class="footer-top__item footer-top__nav">
           <h6 class="footer-top__title">services</h6>

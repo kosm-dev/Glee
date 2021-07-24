@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "my first gulp",
   "main": "index.js",
-  "scripts": {
-   
-  },
+  "scripts": {},
   "author": "k.mnykh",
   "license": "ISC",
   "devDependencies": {
@@ -17,7 +15,8 @@
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
-    "sass": "^1.35.2"
+    "sass": "^1.35.2",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "browser-sync": "^2.27.4"
