@@ -194,17 +194,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 	}
-
 	&__item {
     display: flex !important;
     justify-content: space-between;
     margin-bottom: 200px;
 	}
-
 	&__content {
     color: $title1;
 	}
-
 	&__title {
     margin-bottom: 35px;
     color: $title1;
@@ -212,7 +209,6 @@
     font-size: 72px;
     line-height: 70px;
 	}
-
 	&__text {
     max-width: 370px;
     margin-bottom: 35px;
@@ -220,14 +216,12 @@
     line-height: 30px;
     color: $accent;
 	}
-
 	&__link {
     display: inline-block;
     position: relative;
     @extend %btn;
     padding: 20px 100px 20px 30px;
     vertical-align: middle;
-
 	}
   &__link:before{
     content: url(../images/arrow.svg);
@@ -278,7 +272,6 @@
     display: flex;
     justify-content: space-between;
 	}
-
   &__features-item {
     position: relative;
     max-width: 600px;
@@ -317,7 +310,6 @@
     line-height: 40px;
     @extend %dm-700;
 	}
-
   &__features-text {
     max-width: 183px;
     font-size: 16px;
@@ -326,6 +318,79 @@
     color: #585858;
 	}
 }
+
+// section category
+
+.category {
+  padding: 100px 0 120px 0;
+}
+
+.category-top {
+  margin-bottom: 77px;
+  &__title {
+    @extend %title-category;
+    margin-bottom: 30px;
+	}
+
+  &__filter-btn {
+    text-align: center;
+	}
+  &__btn {
+    @extend %btn-category;
+    margin-right: 35px;
+    &:last-child{
+      margin-right: 0;
+    }
+	}
+  .mixitup-control-active {
+    color: #191919;
+  }
+}
+
+.category-content {
+    display: grid;
+    min-height: 246px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+	&__item {
+    position: relative;
+	}
+  &__box {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+    @extend %dm-700;
+  }
+	&__name {
+    display: block;
+    max-width: 185px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #191919;
+	}
+	&__text {
+    color: $back3;
+    font-size: 16px;
+
+	}
+}
+
+// .popup
+.product-video {
+	&__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	}
+}
+
 
 
 @import 'media';
