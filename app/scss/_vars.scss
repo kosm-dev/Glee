@@ -11,6 +11,8 @@ $back2: #fcd7b6;
 $back3: #a3bbc8;
 $back4: #fff;
 $back5: #fef7f0;
+$back6: #feefe2;
+
 
 
 // fonts
@@ -54,6 +56,13 @@ $back5: #fef7f0;
   text-align: center;
 }
 
+%title-features {
+  font-size: 26px;
+  line-height: 32px;
+  @extend %dm-700;
+  color: $title1;
+}
+
 %btn-category {
   padding: 0;
   @extend %dm-700;
@@ -65,11 +74,6 @@ $back5: #fef7f0;
   cursor: pointer;
 }
 
-%wrapper {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 
 
