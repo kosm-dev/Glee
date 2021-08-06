@@ -458,7 +458,6 @@
 
 // .features
   .features {
-
 	&__items {
     display: flex;
 	}
@@ -528,6 +527,117 @@
     background-position: center center;
 	}
 }
+
+// .blog
+.blog {
+  &__wrapper{
+    height: 450px;
+    padding-top: 108px;
+  }
+	&__items {
+    display: flex;
+    justify-content: space-between;
+	}
+	&__item {
+    position: relative;
+    max-width: 370px;
+    min-height: 420px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+	}
+	&__item-imglink {
+    display: block;
+    img{
+      height: 250px;
+      object-fit: cover;
+    }
+	}
+	&__item-news {
+    position: absolute;
+    bottom: 190px;
+    left: 28px;
+    padding: 10px 30px;
+    background-color: $back3;
+    border-radius: 50px;
+    color: #fff;
+    @extend %dm-700;
+    text-transform: uppercase;
+	}
+	&__item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 36px 25px;
+	}
+	&__item-titlelink {
+    min-height: 80px;
+    display: block;
+    margin-bottom: 15px;
+	}
+	&__item-title {
+    @extend %dm-500;
+    font-size: 18px;
+    color: $blog-accent;
+	}
+	&__item-info {
+    display: flex;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-transform: uppercase;
+	}
+	&__item-data {
+    margin-right: 30px;
+	}
+	&__item-author,
+  &__item-data {
+    font-size: 12px;
+    line-height: 30px;
+    color: #222933;
+	}
+}
+
+.blog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+	&__title {
+    @extend %title-category;
+	}
+	&__link {
+    position: relative;
+    padding-right: 25px;
+    @extend %dm-700;
+    font-size: 16px;
+    color: #262626;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 6px;
+      height: 11px;
+      background-image: url('../images/decor/arrow-2.svg');
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+	}
+}
+// partners
+
+.partners {
+  min-height: 430px;
+  padding: 260px 0 88px;
+  background-color: $back5;
+	&__list {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+}
+
 
 
 
