@@ -26,4 +26,30 @@ body{
   flex-grow: 1;
 }
 
+.breadcrumbs {
+	&__list {
+    display: flex;
+    justify-content: center;
+    color: $default;
+	}
+	&__item {
+    position: relative;
+    padding-right: 20px;
+    &::after{
+      content: "/";
+      position: absolute;
+      right: 7px;
+    }
+    &:last-child{
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+	}
+	&__link {
+    color: $default;
+	}
+}
+
 

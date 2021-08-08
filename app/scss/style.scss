@@ -183,6 +183,20 @@
 	}
 }
 
+// top
+  .top {
+    padding: 35px 0;
+    background-color: $back1;
+	&__title {
+    margin-bottom: 15px;
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    text-align: center;
+	}
+}
+
 // slider
 
 .top-slider {
@@ -627,7 +641,6 @@
 // partners
 
 .partners {
-  min-height: 430px;
   padding: 260px 0 88px;
   background-color: $back5;
 	&__list {
@@ -637,6 +650,81 @@
     align-items: center;
 	}
 }
+
+.partners--special {
+  padding: 85px 0;
+}
+
+// modal
+.modal {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 0;
+	&__form {
+   color: $accent;
+	}
+	&__label{
+    display: block;
+    margin-bottom: 30px;
+    color: $accent;
+	}
+  &__label-check{
+    display: block;
+    margin-bottom: 25px;
+  }
+	&__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 0 15px ;
+    border: 1px solid #f6f6f6;
+	}
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #f6f6f6;
+  }
+	&__btn {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $back3;
+    color: #fff;
+    @extend %rubik-500;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+	}
+	&__forpassword {
+    color: $accent;
+	}
+	&__text {
+    padding: 28px 0;
+    text-align: center;
+	}
+  &__text--spec{
+    text-align: start;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+	&__registerlink {
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    border: 2px solid $back3;
+    @extend %rubik-500;
+    color: $title1;
+    cursor: pointer;
+	}
+}
+
+
+
 
 
 
