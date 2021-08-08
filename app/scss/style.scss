@@ -723,6 +723,42 @@
 	}
 }
 
+// page-404
+
+  .page-404 {
+    padding: 100px 0;
+    background-color: $back3;
+	&__title {
+    margin-bottom: 35px;
+    color: $title1;
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    text-align: center;
+	}
+	&__text {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+	}
+  &__link-box{
+    display: flex;
+    justify-content: center;
+  }
+  &__link{
+    margin-top: 50px;
+    padding: 14px 35px;
+    background-color: #edf1f4;
+    text-transform: uppercase;
+    @extend %dm-500;
+    color: #191919;
+    text-align: center;
+  }
+}
+
+
 
 
 
