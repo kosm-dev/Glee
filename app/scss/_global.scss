@@ -52,4 +52,39 @@ body{
 	}
 }
 
+.pagination {
+  &__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 105px;
+  }
+  &__inner--list{
+    justify-content: start;
+    margin-top: 70px;
+  }
+	&__list {
+    display: flex;
+	}
+	&__item {
+    margin-right: 15px;
+    padding: 0;
+	}
+  &__link{
+    display: inline-block;
+    padding: 22px;
+    color: $title1;
+    font-size: 16px;
+    line-height: 10px;
+    border: 1px solid $back3;
+    &--active{
+      background-color: $back3;
+      color: #fff;
+    }
+  }
+}
+
+
+
+
 
