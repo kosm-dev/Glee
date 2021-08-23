@@ -28,6 +28,30 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 3000
   });
+
+  $('.product-slide__thumbs').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false,
+    arrows: false,
+
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumbs',
+    draggable: false,
+    arrows: false,
+    fade: true,
+  });
+
+  $('.related-product__slider').slick({
+    arrows: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
  
 
   // rateyo
@@ -45,6 +69,10 @@ $(function() {
     ratedFill: "#ffcc00",
     readOnly: true,
     spacing: "8px",
+  });
+
+  // styler
+  $('.product-filter__num').styler({
   });
 
   
