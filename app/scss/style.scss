@@ -1227,6 +1227,97 @@
   background-color: #333;
 }
 
+// tabs
+
+.product-tabs {
+  padding-top: 80px;
+	&__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    @extend %rubik-500;
+    font-size: 18px;
+	}
+	&__top-item {
+    width: 241px;
+    padding: 20px 0;
+    color: $title1;
+    background-color: $back1;
+    text-align: center;
+    border-radius: 5px;
+    & + .product-tabs__top-item{
+      margin-left: 13px;
+    }
+	}
+	&__top-item--active {
+    color: #fff;
+    background-color: $back3;
+	}
+	&__content {
+    color: $title1;
+    font-size: 16px;
+    line-height: 30px;
+	}
+	&__content-item {
+    display: none;
+    &.product-tabs__content-item--active{
+      display: block;
+    }
+	}
+}
+
+// related slider
+
+.related{
+  &__title{
+    position: relative;
+    margin: 110px 0 75px;
+    color: $title1;
+    @extend %dm-700;
+    font-size: 36px;
+  }
+}
+
+.related-slider{
+  display: flex;
+  align-items: center;
+  height: 400px;
+  .products-content__item{
+    display: inline-block;
+    width: 270px;
+    text-align: center;
+    & + .products-content__item{
+      margin-right: 30px;
+    }
+  }
+}
+
+.slick-prev,
+.slick-next{
+  position: absolute;
+  top: -123px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: 1px solid $back1;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .3s;
+  &:hover{
+    border: 1px solid $back3;
+  }
+}
+
+.slick-prev{
+  right: 70px;
+}
+
 
 
 

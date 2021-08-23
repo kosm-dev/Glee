@@ -1,4 +1,17 @@
 $(function() {
+  // Реализация табов
+  $('.product-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  });
+
+
+
+  // Реалзация "добавить в корзину"
   $('.shop-product__addbtn').on('click', function () {
     $('.shop-product__boxcart').toggleClass('shop-product__boxlink--active');
     $(this).removeClass('shop-product__boxlink--active');
@@ -22,12 +35,31 @@ $(function() {
 
   // slick slider
   $('.top-slider__inner').slick({
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000
   });
+  // Related слайдер
+
+  $('.related-slider').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    // variableWidth: true,
+    // centerMode: true,
+    // centerPadding: '40px',
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/decor/arrow-related-left.svg" alt="arrow"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/decor/arrow-related-right.svg" alt="arrow"></button>',
+
+  });
+
+  // Сдвоенный слайдер как для карточки товара
 
   $('.product-slide__thumbs').slick({
     asNavFor: '.product-slide__big',
@@ -46,13 +78,6 @@ $(function() {
     fade: true,
   });
 
-  $('.related-product__slider').slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
-  });
- 
 
   // rateyo
   $(".star").rateYo({
@@ -92,9 +117,6 @@ $(function() {
   var mixer2 = mixitup(containerEl2, config);
   
   
-
-
-
 
 
 })
