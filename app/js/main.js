@@ -35,8 +35,8 @@ $(function() {
 
   // slick slider
   $('.top-slider__inner').slick({
-    dots: false,
-    arrows: true,
+    dots: true,
+    arrows: false,
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000
