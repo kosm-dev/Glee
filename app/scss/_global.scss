@@ -26,6 +26,12 @@ body{
   flex-grow: 1;
 }
 
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .breadcrumbs {
 	&__list {
     display: flex;
@@ -88,6 +94,7 @@ body{
     }
   }
 }
+
 
 
 
