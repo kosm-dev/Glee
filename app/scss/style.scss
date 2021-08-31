@@ -1744,6 +1744,127 @@
 	}
 }
 
+.contact {
+  padding-top: 115px;
+	&__subtitle {
+    margin-bottom: 5px;
+    color: $back3;
+    font-size: 16px;
+    text-align: center;
+	}
+	&__title {
+    margin-bottom: 75px;
+    @extend %dm-700;
+    font-size: 35px;
+    color: $accent;
+    text-align: center;
+	}
+  .contact-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    min-height: 380px;
+    padding: 70px 0 70px;
+    background: #fbfbfb;
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    transition: all .3s;
+      &:hover{
+        border-color: $back3;
+        .contact-item__boximg{
+          background-color: $back3;
+            path{
+              fill: #fff;
+            }
+        }
+      }
+	  &__boximg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 60px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 6px 57px 0px rgba(37, 37,  37, 0.05);
+      transition: all .3s;
+	  }
+	  &__info-title {
+      margin-bottom: 25px;
+      @extend %dm-700;
+      font-size: 20px;
+      color: #222;
+	  }
+	  &__info-item {
+      font: 16px;
+      color: #565872;
+	  }
+    &__info-text{
+      display: inline-block;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &__info-link{
+      color: inherit;
+    }
+  }
+}
+
+// contact-form
+
+.contact-form{
+  &__inner{
+    display: flex;
+  }
+  .comments-form {
+    max-width: 620px;
+    margin-right: 50px;
+    &__label--textarea{
+      height: 175px;
+    }
+	  &__text-input {
+      width: 300px;
+      text-transform: uppercase;
+      color: #565872;
+      border: none;
+      background-color: #fafafa;
+	  }
+	  &__textarea {
+      min-width: 620px;
+      height: 175px;
+      text-transform: uppercase;
+      color: #565872;
+      border: none;
+      background-color: #fafafa;
+	  }
+	  &__submit {
+      margin-top: 30px;
+	  }
+  }
+  #map{
+    width: 500px;
+    height: 335px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
