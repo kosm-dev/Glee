@@ -1,0 +1,134 @@
+@media (max-width: 1100px){
+  // header adaptive
+  .menu{
+    margin-left: 20px;
+    order: 1;
+    &__list{
+      position: absolute;
+      transform: translateY(-300%);
+      top: 120px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: all .3s;
+      background-color: #fff;
+      &.menu__list--active{
+        transform: translateY(0%);
+        transition: all .3s;
+      }
+    }
+    &__list-item + .menu__list-item{
+    margin-left: 0;
+    }
+    &__list-item{
+      width: 100%;
+      text-align: center;
+    }
+    &__list-link{
+      display: block;
+      padding: 0 15px;
+      padding: 20px 0;
+    }
+    &__btn{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 25px;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+      span{
+        width: 100%;
+        height: 3px;
+        background-color: $accent;
+      }
+      &::after,
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $accent;
+      }
+      &::before{
+        top: 0;
+      }
+      &::after{
+        bottom: 0;
+      }
+
+    }
+  }
+  .user-nav{
+    margin-left: auto;
+  }
+  // footer adaptive
+  .footer-top{
+    &__item{
+      margin-right: 40px;
+    }
+
+  }
+}
+
+@media (max-width: 880px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__contact{
+      width: 100%;
+    }
+    &__item-form{
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px){
+  // header adaptive
+  .header{
+    padding: 30px 0;
+  }
+  .menu{
+    order: 0;
+  }
+  .user-nav{
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 35px;
+  }
+   // footer adaptive
+   .footer-bottom{
+     flex-wrap: wrap;
+     &__copy{
+       margin-bottom: 20px;
+     }
+     &__nav-list{
+       margin-bottom: 20px;
+     }
+   }
+   .footer-top{
+    &__form-input{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 350px){
+  // header adaptive
+  .user-nav{
+    flex-direction: column;
+    &__inner{
+      margin: 20px 0;
+    }
+  }
+  // footer adaptive
+  
+}
+
+

@@ -1,4 +1,8 @@
 $(function() {
+  // бургер меню
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
   // Реализация табов
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
@@ -11,7 +15,7 @@ $(function() {
 
 
 
-  // Реалзация "добавить в корзину"
+  // Реализация "добавить в корзину"
   $('.shop-product__addbtn').on('click', function () {
     $('.shop-product__boxcart').toggleClass('shop-product__boxlink--active');
     $(this).removeClass('shop-product__boxlink--active');

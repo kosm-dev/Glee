@@ -10,8 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1770px;
+    flex-wrap: wrap;
+    max-width: 1800px;
     margin: 0 auto;
+    padding: 0 15px;
     line-height: 22px;
     @extend %rubik-500;
   }
@@ -28,6 +30,9 @@
 }
 
 .menu{
+  &__btn{
+    display: none;
+  }
   &__list{
     display: flex;
   }
@@ -50,6 +55,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
   }
   &__link--search{
     background-color: $back1;
