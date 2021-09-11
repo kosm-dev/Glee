@@ -2013,7 +2013,6 @@
     margin-bottom: 35px;
     font-size: 16px;
     line-height: 30px;
-    
 	}
 	&__link {
     position: relative;
@@ -2048,8 +2047,6 @@
     position: relative;
     width: 370px;
 	}
-	&__item-imgbox {
-	}
 	&__item-img {
     width: 370px;
     height: 320px;
@@ -2068,7 +2065,6 @@
   &__item-infotext {
     margin-right: 53px;
 	}
-
 	&__item-name {
     margin-bottom: 10px;
     @extend %dm-700;
@@ -2096,22 +2092,49 @@
 	}
 }
 
+// terms
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.terms {
+  padding-top: 110px;
+	&__title {
+    margin-bottom: 10px;
+    @extend %rubik-500;
+    font-size: 24px;
+    color: $title1;
+    line-height: 40px;
+	}
+	&__list {
+    margin-bottom: 50px;
+    list-style-type: none;
+    counter-reset: num;
+	}
+	&__list-item {
+    position: relative;
+    &::before{
+      content: "0" counter(num) ".";
+      counter-increment: num;
+      position: absolute;
+      top: 0;
+      left: 5px;
+      display: inline-block;
+      color: $title1;
+    }
+    &:nth-child(n + 10)::before{
+      content: counter(num);
+    }
+    margin-bottom: 30px;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title1;
+	}
+	&__text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $title1;
+	}
+}
 
 
 
