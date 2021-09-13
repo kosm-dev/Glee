@@ -1,4 +1,9 @@
 $(function() {
+
+  // реализация кнопочки для фильтров
+  $('.shop__filter-btn').on('click', function(){
+    $('.shop__filters').slideToggle();
+  });
   // бургер меню
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
@@ -80,6 +85,15 @@ $(function() {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+        }
+      },
+
+    ]
   });
 
 

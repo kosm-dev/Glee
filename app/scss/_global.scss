@@ -95,6 +95,25 @@ body{
   }
 }
 
+@media (max-width: 500px){
+  // pagination adaptive
+  .pagination{
+    &__item{
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 350px){
+  
+  // breadcrambs adaptive
+  .top{
+    &__title{
+      line-height: 40px;
+    }
+  }
+}
+
 
 
 
